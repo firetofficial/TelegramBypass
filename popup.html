@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 250px; 
+            
+            box-sizing: border-box; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .settings-container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-container label {
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            accent-color: #4CAF50;
+        }
+
+        #saveButton {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #saveButton:hover {
+            background-color: #3e8e41;
+        }
+
+        .telegram-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .telegram-link a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        .telegram-link a:hover {
+            color: #23527c;
+        }
+
+        .footer {
+            padding-top: 50px;
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        
+            <h1>Telegram Device Bypass</h1>
+        
+        <div class="settings-container">
+            <div class="checkbox-container">
+                <input type="checkbox" id="bypass-toggle" />
+                <label for="bypass-toggle">Bypass</label>
+            </div>
+            <button id="saveButton">Save</button>
+            <div class="telegram-link">
+                <a href="https://t.me/zythsoft" target="_blank">Join our Telegram group</a>
+            </div>
+            <div class="footer">
+                © 2024 ZYTHTEAM - Developed by FIRET
+            </div>
+        </div>
+    </aside>
+    <script src="popup.js"></script>
+</body>
+</html>
